@@ -6,6 +6,7 @@
 配布物（インストーラ）は [Releases](https://github.com/zuboland/honjin/releases/latest) から。
 登録不要・無料。Windows対応（ZUBOLAND株式会社名義のコード署名済み）。
 
+- 製品ページ: https://zuboland.jp/products/honjin
 - 開発元: [ZUBOLAND株式会社](https://zuboland.jp)
 - 本体のソースは非公開です。**拡張API（Source / Watch / View）は公開仕様**で、誰でも足せます。
 
@@ -166,7 +167,7 @@ HONJIN は外部にデータを預けません。集めた出来事はあなた�
 |---|---|---|
 | **KUZIRA** | マーケター特化のセカンドブラウザ。魚拓・タグ検知・競合ウォッチ | [製品ページ](https://zuboland.jp/products/kuzira) |
 | **UNICREW** | 複数のAIと議論しながら開発・作業を進めるAIチーム型ワークスペース | [製品ページ](https://zuboland.jp/products/unicrew) |
-| **HONJIN** | （このリポジトリ）事業の今と動きを手元で見る作業台 | [Releases](https://github.com/zuboland/honjin/releases/latest) |
+| **HONJIN** | （このリポジトリ）事業の今と動きを手元で見る作業台 | [製品ページ](https://zuboland.jp/products/honjin) |
 
 3つとも登録不要・無料で使えます。
 
