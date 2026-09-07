@@ -4,7 +4,7 @@
 ダッシュボードを10個開かなくても、今日なにが動いたかが分かります。
 
 配布物（インストーラ）は [Releases](https://github.com/zuboland/honjin/releases/latest) から。
-登録不要・無料。Windows対応（ZUBOLAND株式会社名義のコード署名済み）。
+登録不要・無料。Windows と macOS に対応（Windows＝ZUBOLAND株式会社名義のコード署名済み／macOS＝Apple 公証済み）。
 
 - 製品ページ: https://zuboland.jp/products/honjin
 - 開発元: [ZUBOLAND株式会社](https://zuboland.jp)
@@ -63,12 +63,14 @@ HONJIN は、自分が使っている道具から「出来事」を集めて、*
 
 | OS | ファイル | 備考 |
 |---|---|---|
-| **Windows 10 / 11**（64bit） | [`HONJIN-Setup-x.y.z.exe`](https://github.com/zuboland/honjin/releases/latest) 約97MB | 実行するだけ。**管理者権限は不要**（ユーザー領域にインストールされます） |
+| **Windows 10 / 11**（64bit） | [`HONJIN-Setup-x.y.z.exe`](https://github.com/zuboland/honjin/releases/latest) 約102MB | 実行するだけ。**管理者権限は不要**（ユーザー領域にインストールされます） |
+| **macOS**（Apple Silicon / Intel 共通） | [`HONJIN-x.y.z-mac.dmg`](https://github.com/zuboland/honjin/releases/latest) 約203MB | 開いて `HONJIN.app` を「アプリケーション」に入れるだけ |
 
-- **ZUBOLAND株式会社名義のコード署名済み**です。通常 SmartScreen の警告は出ません。
+- Windows は **ZUBOLAND株式会社名義のコード署名済み**です。通常 SmartScreen の警告は出ません。
   もし出た場合は「詳細情報」→「実行」で進めます（署名の浸透待ちで出ることがあります）。
+- macOS は **Developer ID 署名＋Apple 公証＋ステープル済み**です。「開発元を確認できません」は出ません。
 - Python など追加のランタイムは要りません。必要なものは同梱しています。
-- macOS / Linux 版はまだありません。
+- Linux 版はまだありません。
 
 ## 最初の3ステップ
 
@@ -102,13 +104,13 @@ HONJIN は、自分が使っている道具から「出来事」を集めて、*
 
 **すべてあなたのPCの中だけです。**
 
-| データ | 場所（Windows） |
-|---|---|
-| 作業場ぜんぶ | `%APPDATA%\HONJIN\workspace\` |
-| 出来事の川 | 同 `stream\`（`events.jsonl` ＝ 追記のみ。テキストなので他のツールでも読めます） |
-| 監視の定義 | 同 `watch\` |
-| 拡張 | 同 `plugins\` |
-| 書いたカード | 同 `vault\`（保存先は設定から変えられます） |
+| データ | Windows | macOS |
+|---|---|---|
+| 作業場ぜんぶ | `%APPDATA%\HONJIN\workspace\` | `~/Library/Application Support/HONJIN/workspace/` |
+| 出来事の川 | 同 `stream\`（`events.jsonl` ＝ 追記のみ。テキストなので他のツールでも読めます） | 同 `stream/` |
+| 監視の定義 | 同 `watch\` | 同 `watch/` |
+| 拡張 | 同 `plugins\` | 同 `plugins/` |
+| 書いたカード | 同 `vault\`（保存先は設定から変えられます） | 同 `vault/` |
 
 出来事の中身が外部に送られることはありません。
 
@@ -121,9 +123,9 @@ HONJIN は、自分が使っている道具から「出来事」を集めて、*
 
 ## アンインストール
 
-Windows の「設定 → アプリ」から HONJIN を削除します。
+Windows は「設定 → アプリ」から HONJIN を削除します。macOS は「アプリケーション」から `HONJIN.app` を捨てます。
 
-- **作業場（`%APPDATA%\HONJIN\workspace\`）は残ります。** 入れ直すとそのまま続きから使えます。
+- **作業場（Windows: `%APPDATA%\HONJIN\workspace\` ／ macOS: `~/Library/Application Support/HONJIN/workspace/`）は残ります。** 入れ直すとそのまま続きから使えます。
 - 完全に消したい場合は、アンインストール後にこのフォルダを手で削除してください。
 
 ## よくある質問
